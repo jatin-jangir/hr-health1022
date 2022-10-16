@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    
+</head>
+<body>
+    <h1> Diet Chart</h1>
+    <form id="Health Care">
+    <label> <b>First Name:</b></label>
+    <input type="text" id="fname" ><br><br>
+    <label><b>Last Name:</b></label>
+    <input type="text" id="lname"  ><br><br>
+    <label><b>Patient No:-:</b></label>
+    <input type="email" ><br><br>
+ 
+    
+    Date of Birth: <input type="date"><br>
+
+<label><b>Illness:</b></label><br>
+  <input type="radio" id="Diabetes" name="Type" value="Diabetes">
+  <label for="type1">Diabetes</label><br>
+  <input type="radio" id="KidneyStone" name="Type" value="KidneyStone">
+  <label for="Type2">KidneyStone</label><br>
+  <input type="radio" id="Blood Pressure" name="Type" value="Blood Pressure">
+  <label for="Type2">Blood Pressure</label><br>
+  
+  <label for="Rate"><b>Any New Problem:</b></label><br>
+<textarea id="address" name="Rate" rows="4" cols="50"></textarea>
+    <br><br>
+    <label for="Movies"><b>Diet By:</b></label><br>
+    <select name="Diet" id="Diet">
+     <option value="Dr.Karan">Dr.Karan</option>
+     <option value="Dr.Mayank">Dr.Mayank</option>
+     <option value="Dr.Tanuj">Dr.Tanuj</option>
+     <option value="Dr.Aniket">Dr.Aniket</option>
+    </select>
+ <br><br>
+ <input type="reset" onclick="onclick="return confirm('Do you really want to reset?')" value="Reset" />
+ <input type="submit" onclick="return confirm('Do you really want to continue?')" value="Send" />
+
+</form>
+ 
+<button><a href="Index.html">Home</a> </button>
+
+<button onClick="JavaScript:SubmitFunction()>"Submit </button>
+<script>
+
+
+}
+
+function calculateAge(date) 
+{
+  const now = new Date();
+  const diff = Math.abs(now - date );
+  const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365)); 
+  return age
+} 
+
+    function myFun() {
+      document.getElementById("feedback").reset();
+    }
+    function SubmitFunction(){
+if(document.getElementById('Diabetes').checked) {
+ alert ("You have selected to get diet chart for Diabetes")
+}else if(document.getElementById('KidneyStone').checked) {
+alert ("You have selected to get diet chart for Diabetes") } }
+
+  
+    
+    </script>
+</body>
+</html>
